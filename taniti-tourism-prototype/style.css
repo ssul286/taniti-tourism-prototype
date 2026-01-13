@@ -1,0 +1,99 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f8f9fa;
+  color: #222;
+}
+header {
+  background: #009688;
+  color: #fff;
+  padding: 1em 0;
+  text-align: center;
+}
+nav a {
+  color: #fff;
+  margin: 0 1em;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav .book-btn, .cta {
+  background: #ff9800;
+  color: #fff;
+  padding: 0.5em 1em;
+  border-radius: 4px;
+  margin-left: 1em;
+}
+.hero {
+  background: #e0f7fa;
+  padding: 2em;
+  text-align: center;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: center;
+}
+.card {
+  background: #fff;
+  padding: 1em;
+  border-radius: 8px;
+  width: 200px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.filters button {
+  margin: 0.5em;
+  padding: 0.5em 1em;
+  border: none;
+  background: #009688;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.filters button:hover {
+  background: #00796b;
+}
+form {
+  background: #fff;
+  padding: 2em;
+  border-radius: 8px;
+  max-width: 400px;
+  margin: 2em auto;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+}
+form label {
+  margin-top: 1em;
+}
+form input, form select {
+  padding: 0.5em;
+  margin-top: 0.5em;
+}
+form button {
+  margin-top: 1.5em;
+  background: #009688;
+  color: #fff;
+  border: none;
+  padding: 0.75em;
+  border-radius: 4px;
+  cursor: pointer;
+}
+footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+  margin-top: 2em;
+}
+@media (max-width: 600px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  nav a, nav .book-btn {
+    display: block;
+    margin: 0.5em 0;
+  }
+}
