@@ -2,7 +2,10 @@ pages:
   stage: deploy
   script:
     - mkdir public
-    - cp -r *.html *.css *.js images public/
+    - cp -r *.html public/ || true
+    - cp -r *.css public/ || true
+    - cp -r *.js public/ || true
+    - if [ -d images ]; then cp -r images public/; fi
   artifacts:
     paths:
       - public
