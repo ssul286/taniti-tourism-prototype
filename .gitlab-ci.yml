@@ -2,10 +2,10 @@ pages:
   stage: deploy
   script:
     - mkdir public
-    - cp -r *.html public/ || true
-    - cp -r *.css public/ || true
-    - cp -r *.js public/ || true
-    - if [ -d images ]; then cp -r images public/; fi
+    - cp -r taniti-tourism-prototype/*.html public/ || true
+    - cp -r taniti-tourism-prototype/*.css public/ || true
+    - cp -r taniti-tourism-prototype/*.js public/ || true
+    - if [ -d taniti-tourism-prototype/images ]; then cp -r taniti-tourism-prototype/images public/; fi
   artifacts:
     paths:
       - public
