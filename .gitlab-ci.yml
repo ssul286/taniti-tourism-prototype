@@ -2,8 +2,7 @@ pages:
   stage: deploy
   script:
     - mkdir public
-    - cp -r * public/
-    - cp -r .gitlab-ci.yml public/  # Optional: if you want to see your CI file in the site (not required)
+    - cp -r *.html *.css *.js images public/
   artifacts:
     paths:
       - public
