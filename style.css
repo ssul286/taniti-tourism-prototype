@@ -172,3 +172,9 @@ footer {
     object-fit: cover; /* Ensures the image fills its container without distortion */
 }
 
+img {
+    max-width: 100%; /* Ensures the image never exceeds the width of its container */
+    height: auto;    /* Maintains the aspect ratio of the image */
+    display: block;  /* Removes extra space below the image caused by inline elements */
+}
+
