@@ -13,7 +13,7 @@
     <nav>
       <a href="index.html">Home</a>
       <a href="attractions.html">Attractions</a>
-      <a href="activities.html">Activities</a>
+      <a href="activities.html" aria-current="page">Activities</a>
       <a href="accommodations.html">Accommodations</a>
       <a href="booking.html" class="book-btn">Book Now</a>
       <a href="about.html">About</a>
@@ -27,31 +27,42 @@
       <button onclick="filterActivities('adventure')">Adventure</button>
       <button onclick="filterActivities('culture')">Culture</button>
     </div>
-    <div id="activities-list">
-      <div class="activity family adventure">
+    <div id="activities-list" class="cards">
+      <div class="card activity family adventure">
+        <img src="images/snorkeling.jpg" alt="Snorkeling in Taniti">
         <h3>Snorkeling</h3>
         <p>Explore coral reefs. Great for families and adventure seekers.</p>
+        <p><strong>Difficulty:</strong> Easy | <strong>Duration:</strong> 2 hours | <strong>All ages</strong></p>
       </div>
-      <div class="activity adventure">
+      <div class="card activity adventure">
+        <img src="images/ziplining.jpg" alt="Zip-lining in the rainforest">
         <h3>Zip-lining</h3>
         <p>Fly through the rainforest canopy. Ages 10+.</p>
+        <p><strong>Difficulty:</strong> Moderate | <strong>Duration:</strong> 1 hour</p>
       </div>
-      <div class="activity family culture">
+      <div class="card activity family culture">
+        <img src="images/tanitimuseum.jpg" alt="Taniti History Museum">
         <h3>History Museum</h3>
         <p>Learn about Taniti’s rich history. Perfect for all ages.</p>
+        <p><strong>Difficulty:</strong> Easy | <strong>Duration:</strong> 1 hour</p>
       </div>
-      <div class="activity adventure">
+      <div class="card activity adventure">
+        <img src="images/volcano.jpg" alt="Volcano hike">
         <h3>Volcano Hike</h3>
         <p>Guided hike to the active volcano. Moderate difficulty.</p>
+        <p><strong>Difficulty:</strong> Moderate | <strong>Duration:</strong> 3 hours</p>
       </div>
-      <div class="activity family">
+      <div class="card activity family">
+        <img src="images/familyfun.jpg" alt="Arcade and bowling">
         <h3>Arcade & Bowling</h3>
         <p>Fun for kids and adults in Merriton Landing.</p>
+        <p><strong>Difficulty:</strong> Easy | <strong>All ages</strong></p>
       </div>
     </div>
   </main>
   <footer>
     <p>© 2026 Taniti Tourism Board</p>
+    <p>Contact: info@visit-taniti.com | +1-800-TANITI</p>
   </footer>
 </body>
 </html>
