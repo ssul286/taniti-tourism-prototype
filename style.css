@@ -163,3 +163,12 @@ footer {
         padding: 1em;
     }
 }
+
+.gallery img {
+    max-width: 100%; /* Ensures images fit within their container */
+    height: auto;    /* Maintains aspect ratio */
+    border-radius: 8px; /* Keeps the rounded corners */
+    margin-bottom: 0.5em;
+    object-fit: cover; /* Ensures the image fills its container without distortion */
+}
+
