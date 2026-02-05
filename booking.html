@@ -14,19 +14,19 @@
       <a href="attractions.html">Attractions</a>
       <a href="activities.html">Activities</a>
       <a href="accommodations.html">Accommodations</a>
-      <a href="booking.html" class="book-btn">Book Now</a>
+      <a href="booking.html" class="book-btn" aria-current="page">Book Now</a>
       <a href="about.html">About</a>
     </nav>
   </header>
   <main>
     <h2>Booking Form</h2>
-    <form>
+    <form action="#" method="post">
       <label for="name">Full Name:</label>
-      <input type="text" id="name" required>
+      <input type="text" id="name" name="name" required>
       <label for="email">Email:</label>
-      <input type="email" id="email" required>
+      <input type="email" id="email" name="email" required>
       <label for="accommodation">Accommodation Type:</label>
-      <select id="accommodation">
+      <select id="accommodation" name="accommodation">
         <option>Hotel</option>
         <option>Bed & Breakfast</option>
         <option>Beach House</option>
@@ -35,7 +35,7 @@
         <option>Private Home</option>
       </select>
       <label for="activity">Activity:</label>
-      <select id="activity">
+      <select id="activity" name="activity">
         <option>Snorkeling</option>
         <option>Rainforest Hike</option>
         <option>Volcano Tour</option>
@@ -44,12 +44,14 @@
         <option>History Museum</option>
       </select>
       <label for="dates">Dates:</label>
-      <input type="text" id="dates" placeholder="MM/DD/YYYY - MM/DD/YYYY" required>
+      <input type="text" id="dates" name="dates" placeholder="MM/DD/YYYY - MM/DD/YYYY" required>
       <button type="submit">Submit</button>
     </form>
+    <p>After submitting, you will receive a confirmation email with your booking details.</p>
   </main>
   <footer>
     <p>© 2026 Taniti Tourism Board</p>
+    <p>Contact: info@visit-taniti.com | +1-800-TANITI</p>
   </footer>
 </body>
 </html>
