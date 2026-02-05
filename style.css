@@ -165,16 +165,25 @@ footer {
 }
 
 .gallery img {
-    max-width: 100%; /* Ensures images fit within their container */
-    height: auto;    /* Maintains aspect ratio */
-    border-radius: 8px; /* Keeps the rounded corners */
+    max-width: 100%; 
+    height: auto;    
+    border-radius: 8px; 
     margin-bottom: 0.5em;
-    object-fit: cover; /* Ensures the image fills its container without distortion */
+    object-fit: cover; 
 }
 
 img {
-    max-width: 100%; /* Ensures the image never exceeds the width of its container */
-    height: auto;    /* Maintains the aspect ratio of the image */
-    display: block;  /* Removes extra space below the image caused by inline elements */
+    max-width: 100%; 
+    height: auto;    
+    display: block;  
 }
 
+.gallery {
+    max-width: 1200px; 
+    margin: auto;      
+    padding: 1em;      
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+}
