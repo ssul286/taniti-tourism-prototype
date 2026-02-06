@@ -20,11 +20,13 @@
   </header>
   <main>
     <h2>Booking Form</h2>
-    <form action="#" method="post">
+    <form id="bookingForm" action="#" method="post">
       <label for="name">Full Name:</label>
       <input type="text" id="name" name="name" required>
+      
       <label for="email">Email:</label>
       <input type="email" id="email" name="email" required>
+      
       <label for="accommodation">Accommodation Type:</label>
       <select id="accommodation" name="accommodation">
         <option>Hotel</option>
@@ -34,6 +36,7 @@
         <option>Private Condo</option>
         <option>Private Home</option>
       </select>
+      
       <label for="activity">Activity:</label>
       <select id="activity" name="activity">
         <option>Snorkeling</option>
@@ -43,8 +46,10 @@
         <option>Fishing Tour</option>
         <option>History Museum</option>
       </select>
+      
       <label for="dates">Dates:</label>
       <input type="text" id="dates" name="dates" placeholder="MM/DD/YYYY - MM/DD/YYYY" required>
+      
       <button type="submit">Submit</button>
     </form>
     <p>After submitting, you will receive a confirmation email with your booking details.</p>
@@ -53,5 +58,21 @@
     <p>© 2026 Taniti Tourism Board</p>
     <p>Contact: info@visit-taniti.com | +1-800-TANITI</p>
   </footer>
+
+  <script>
+    // Get the form element
+    const bookingForm = document.getElementById('bookingForm');
+
+    // Add an event listener for form submission
+    bookingForm.addEventListener('submit', function(event) {
+      // Show a confirmation dialog
+      const userConfirmed = confirm('Are you sure you want to book this trip?');
+
+      // If the user clicks "Cancel", prevent the form from submitting
+      if (!userConfirmed) {
+        event.preventDefault();
+      }
+    });
+  </script>
 </body>
 </html>
