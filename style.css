@@ -175,7 +175,10 @@ footer {
 img {
     max-width: 100%; 
     height: auto;    
-    display: block;  
+    display: block;
+    object-fit: cover; 
+    border-radius: 8px; 
+    margin-bottom: 0.5em;
 }
 
 .gallery {
@@ -187,3 +190,4 @@ img {
     gap: 1em;
     justify-content: center;
 }
+
