@@ -190,4 +190,9 @@ img {
     gap: 1em;
     justify-content: center;
 }
+.snorkeling-img {
+    max-width: 300px; /* Set a maximum width */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure it fits nicely within the container */
+}
 
